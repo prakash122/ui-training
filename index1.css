@@ -1,0 +1,49 @@
+body {
+    background: #ccc;
+    padding: 5px;
+    font-family: helvetica, arial, "courier new";
+}
+
+#status-div {
+    transition: color 1s;
+}
+
+#status-div[data-status=initial] {
+    color: red;
+}
+
+#status-div[data-status=changed] {
+    color: blue;
+}
+
+#status-div[data-status=reviewed] {
+    color: violet;
+}
+
+#status-div[data-status=final] {
+    color: pink;
+}
+
+::selection {
+    color: red;
+    background: yellow;
+}
+
+.content {
+    width: 500px;
+    height: 500px;
+}
+
+#some-content {
+    width: 200px;
+    height: 200px;
+    background: white;
+}
+
+.modal-parent {
+    position: fixed;
+    top: 0; bottom:0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0, 0.3);
+}

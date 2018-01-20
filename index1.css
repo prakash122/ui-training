@@ -29,6 +29,13 @@ body {
     background: yellow;
 }
 
+#large-modal-button {
+    transition: transform 0.3s;
+}
+#large-modal-button:hover {
+    transform: scaleX(2);
+}
+
 .content {
     width: 500px;
     height: 500px;
